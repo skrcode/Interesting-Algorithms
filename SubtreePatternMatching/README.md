@@ -4,12 +4,12 @@ The subtree pattern matching problem can be described as follows.
 
 Let's consider the following example
 - Input Tree 
-<img src="1.png" width="600" height="600" />
+<img src="1.png" width="1000" height="400" />
 - Pattern Tree
 <img src="4.png" width="200" height="200" />
 
 From the example, we can see that there are two occurrences of the pattern.
-<img src="2.png" width="600" height="600" />
+<img src="2.png" width="1000" height="400" />
 ##### Analysing the Subtree Pattern Matching Problem
 
 - As the goal is to print all the occurrences of the pattern in the input tree, in the worst case, there could be a exponential number of pattern matchings that can occur.
@@ -21,7 +21,7 @@ From the example, we can see that there are two occurrences of the pattern.
 
 We can come up with the following recurrence. 
 ***The subtrees starting from any node can be computed by using subtrees of its children in combination and passing via this node.***
-<img src="3.png" width="600" height="600" />
+<img src="3.png" width="1000" height="400" />
 From the diagram above, we can see that 1 has three children : 2,3,4. So if we would like to get all the subtrees starting from node 1, we would need to figure out the subtrees starting from 2,3 and 4. Once we figure out those subtrees, we can use them to compute the answer for node 1.
 
 >That is done by using the following idea. 
